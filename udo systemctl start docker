@@ -1,0 +1,22 @@
+[0;1;32m●[0m docker.service - Docker Application Container Engine
+     Loaded: loaded (/lib/systemd/system/docker.service; enabled; vendor preset: enabled)
+     Active: [0;1;32mactive (running)[0m since Sat 2025-08-30 19:55:26 -05; 4min 9s ago
+TriggeredBy: [0;1;32m●[0m docker.socket
+       Docs: https://docs.docker.com
+   Main PID: 1433 (dockerd)
+      Tasks: 10
+     Memory: 20.9M
+        CPU: 814ms
+     CGroup: /system.slice/docker.service
+             └─1433 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+
+Aug 30 19:55:25 pop-os dockerd[1433]: time="2025-08-30T19:55:25.845431780-05:00" level=info msg="OTEL tracing is not configured, using no-op tracer provider"
+Aug 30 19:55:25 pop-os dockerd[1433]: time="2025-08-30T19:55:25.845864542-05:00" level=info msg="detected 127.0.0.53 nameserver, assuming systemd-resolved, so using resolv.conf: /run/systemd/resolve/resolv.conf"
+Aug 30 19:55:25 pop-os dockerd[1433]: time="2025-08-30T19:55:25.999498898-05:00" level=info msg="[graphdriver] using prior storage driver: overlay2"
+Aug 30 19:55:26 pop-os dockerd[1433]: time="2025-08-30T19:55:26.066674750-05:00" level=info msg="Loading containers: start."
+Aug 30 19:55:26 pop-os dockerd[1433]: time="2025-08-30T19:55:26.661377814-05:00" level=info msg="Default bridge (docker0) is assigned with an IP address 172.17.0.0/16. Daemon option --bip can be used to set a preferred IP address"
+Aug 30 19:55:26 pop-os dockerd[1433]: time="2025-08-30T19:55:26.795336170-05:00" level=info msg="Loading containers: done."
+Aug 30 19:55:26 pop-os dockerd[1433]: time="2025-08-30T19:55:26.815049421-05:00" level=info msg="Docker daemon" commit="27.5.1-0ubuntu3~22.04.2" containerd-snapshotter=false storage-driver=overlay2 version=27.5.1
+Aug 30 19:55:26 pop-os dockerd[1433]: time="2025-08-30T19:55:26.815405368-05:00" level=info msg="Daemon has completed initialization"
+Aug 30 19:55:26 pop-os dockerd[1433]: time="2025-08-30T19:55:26.855219307-05:00" level=info msg="API listen on /run/docker.sock"
+Aug 30 19:55:26 pop-os systemd[1]: Started Docker Application Container Engine.
