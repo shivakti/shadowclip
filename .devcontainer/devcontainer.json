@@ -5,7 +5,7 @@
   "workspaceFolder": "/workspaces/shadowclip",
   "workspaceMount": "source=${localWorkspaceFolder},target=/workspaces/shadowclip,type=bind",
   "features": {
-    "ghcr.io/devcontainers/features/node:1": {
+    "ghcr.io/devcontainers/features/node:2": {
       "version": "18"
     }
   },
